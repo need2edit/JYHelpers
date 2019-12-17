@@ -12,6 +12,7 @@ import UIKit
 /// A more convienent way to create vertical a UIStackView.
 ///
 /// This sets the axis as `vertical` and uses the default arrangeSubviews with spacing.
+@available(iOS 9.0, *)
 public class VerticalStackView: UIStackView {
 
     /// Creates a vertical stack view with spacing.

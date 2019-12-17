@@ -8,7 +8,7 @@
 
 #if !os(macOS)
 import UIKit
-
+@available(iOS 9.0, *)
 open class ActivityView: UIView {
     
     public enum State {

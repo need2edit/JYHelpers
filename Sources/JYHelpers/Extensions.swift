@@ -18,6 +18,7 @@ extension UIView {
     }
 }
 
+@available(iOS 9.0, *)
 extension UIStackView {
     /// A convenience method for adding multiple views to a stck view using a variadric pattern.
     ///
