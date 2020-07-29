@@ -43,7 +43,7 @@ public extension UITableView {
         return cell
     }
 
-    func dequeueReusableHeaderFooterView<T: UITableViewHeaderFooterView>(kind: String, indexPath: IndexPath) -> T {
+    func dequeueReusableHeaderFooterView<T: UITableViewHeaderFooterView>() -> T {
         guard let headerFooter = dequeueReusableHeaderFooterView(withIdentifier: T.reuseIdentifier) as? T else {
             fatalError("could not dequeue cell of class \(T.self)")
         }
