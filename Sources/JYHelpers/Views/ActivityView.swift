@@ -30,7 +30,7 @@ open class ActivityView: UIView {
             }
         }
     }
-    private let activityIndicator = UIActivityIndicatorView(style: .whiteLarge)
+    private let activityIndicator = UIActivityIndicatorView(style: .large)
     private let statusLabel = UILabel(text: "Loading...", font: .systemFont(ofSize: 12.0))
     
     fileprivate func setupView() {

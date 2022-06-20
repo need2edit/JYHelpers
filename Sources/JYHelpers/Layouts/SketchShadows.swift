@@ -5,6 +5,7 @@
 //  Created by Jake Young on 4/19/20.
 //
 
+#if !os(macOS)
 import UIKit
 
 // https://stackoverflow.com/questions/34269399/how-to-control-shadow-spread-and-blur/48489506
@@ -30,3 +31,4 @@ public extension CALayer {
     }
   }
 }
+#endif

@@ -5,6 +5,7 @@
 //  Created by Jake Young on 5/9/20.
 //
 
+#if !os(macOS)
 import UIKit
 
 /// Provides default implementations of generic reuse methods on UICollectionView to
@@ -51,3 +52,4 @@ public extension UITableView {
     }
 
 }
+#endif

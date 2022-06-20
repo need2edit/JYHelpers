@@ -6,12 +6,13 @@
 //  Copyright © 2017 Phill Farrugia. All rights reserved.
 //
 
+#if !os(macOS)
 import UIKit
 
 /// Represents a UIView that is a reuseable view such as a
 /// UITableViewCell, UITableViewHeaderFooterView or UICollectionViewCell.
 /// Provides everything necessary for a reusable view to be reused.
-public protocol Reusable: class {
+public protocol Reusable: AnyObject {
     
     /// Identifier used to dequeue this view for reuse.
     static var reuseIdentifier: String { get }
@@ -37,3 +38,4 @@ public extension Reusable {
 extension UICollectionReusableView: Reusable { }
 extension UITableViewCell: Reusable { }
 extension UITableViewHeaderFooterView: Reusable { }
+#endif
